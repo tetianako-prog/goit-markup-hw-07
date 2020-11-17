@@ -1,0 +1,33 @@
+.clients__list {
+  display: flex;
+}
+.clients__item {
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.clients__link {
+  display: block;
+  color: #afb1b8;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+
+  .icon {
+    width: 170px;
+    height: 90px;
+  }
+}
