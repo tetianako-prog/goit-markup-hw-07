@@ -2,69 +2,70 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-}
 
-.works__item {
-  width: 370px;
-  margin: 15px;
-  transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
+  &__item {
+    width: 370px;
+    margin: 15px;
+    transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
   }
-}
 
-.works__image {
-  display: block;
-  max-width: 100%;
-}
-
-.works__info {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
-
-.works__title {
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.works__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-
-.works__thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.works__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 63px 24px;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translateY(101%);
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
-  .works__item:hover & {
-    transform: translateY(0);
+  &__image {
+    display: block;
+    max-width: 100%;
   }
-}
 
-.works__overlay-text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  &__info {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+  }
+
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+    .works__item:hover & {
+      transform: translateY(0);
+    }
+  }
+
+  &__overlay-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 }
